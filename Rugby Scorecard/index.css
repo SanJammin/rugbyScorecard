@@ -56,3 +56,11 @@ body {
     font-weight: bold;
 }
 
+#home-data {
+    width: 200px;
+}
+
+#away-data {
+    width: 200px;
+}
+
