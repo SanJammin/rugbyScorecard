@@ -1,21 +1,21 @@
-let guestPoint = document.getElementById("guest-score");
+let awayPoint = document.getElementById("away-score");
 let homePoint = document.getElementById("home-score");
 let homeTeam = document.getElementById("home-team");
-let guestTeam = document.getElementById("guest-team")
+let awayTeam = document.getElementById("away-team")
 
 let homeScore = 0;
-let guestScore = 0;
+let awayScore = 0;
 
 function updateLeader() {
-    if (homeScore > guestScore) {
+    if (homeScore > awayScore) {
         homeTeam.style.textDecoration = "underline solid #FCD34D";
-        guestTeam.style.textDecoration = "none";
-    } else if (homeScore < guestScore) {
-        guestTeam.style.textDecoration = "underline solid #FCD34D";
+        awayTeam.style.textDecoration = "none";
+    } else if (homeScore < awayScore) {
+        awayTeam.style.textDecoration = "underline solid #FCD34D";
         homeTeam.style.textDecoration = "none";
-    } else if (homeScore === guestScore){
+    } else if (homeScore === awayScore){
         homeTeam.style.textDecoration = "none";
-        guestTeam.style.textDecoration = "none";
+        awayTeam.style.textDecoration = "none";
     }
 }
 
@@ -38,32 +38,32 @@ function homePlusFive() {
     
 }
 
-function guestPlusTwo() {
-    guestScore += 2;
-    guestPoint.textContent = guestScore;
+function awayPlusTwo() {
+    awayScore += 2;
+    awayPoint.textContent = awayScore;
     updateLeader();
     
 }
 
-function guestPlusThree() {
-    guestScore += 3;
-    guestPoint.textContent = guestScore;
+function awayPlusThree() {
+    awayScore += 3;
+    awayPoint.textContent = awayScore;
     updateLeader();
     
 }
 
-function guestPlusFive() {
-    guestScore += 5;
-    guestPoint.textContent = guestScore;
+function awayPlusFive() {
+    awayScore += 5;
+    awayPoint.textContent = awayScore;
     updateLeader();
     
 }
 
 function newGame() {
     homeScore = 0;
-    guestScore = 0;
+    awayScore = 0;
     homePoint.textContent = homeScore;
-    guestPoint.textContent = guestScore;
+    awayPoint.textContent = awayScore;
     updateLeader();
 }
 
