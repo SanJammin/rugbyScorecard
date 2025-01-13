@@ -99,5 +99,7 @@ function newGame() {
     updateLeader();
     homeData.textContent = "";
     awayData.textContent = "";
+    homeTeam.textContent = "HOME";
+    awayTeam.textContent = "AWAY"
 }
 
