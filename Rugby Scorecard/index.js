@@ -25,7 +25,13 @@ function homePlusTwo() {
     updateLeader();
 }
 
-function homePlusThree() {
+function homePlusThreePen() {
+    homeScore += 3;
+    homePoint.textContent = homeScore;
+    updateLeader();
+}
+
+function homePlusThreeDrop() {
     homeScore += 3;
     homePoint.textContent = homeScore;
     updateLeader();
@@ -45,7 +51,14 @@ function awayPlusTwo() {
     
 }
 
-function awayPlusThree() {
+function awayPlusThreePen() {
+    awayScore += 3;
+    awayPoint.textContent = awayScore;
+    updateLeader();
+    
+}
+
+function awayPlusThreeDrop() {
     awayScore += 3;
     awayPoint.textContent = awayScore;
     updateLeader();
